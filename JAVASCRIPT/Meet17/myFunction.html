@@ -1,0 +1,90 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myFunction</title>
+</head>
+<body>
+    <h1 id="resultText"></h1>
+    <h1 id="resultText2"></h1>
+</body>
+<script>
+    function showResult(idText){
+        document.getElementById(idText).innerHTML = result;
+    }
+
+    function sumNumber(a, b, showFunction){
+        // return a + b;
+        const result = a + b;
+        // document.getElementById("resultText").innerHTML = a + b;
+        showResult("resultText", result);
+    }
+    
+    function subNumber(a, b, showFunction){
+        // document.getElementById("resultText2").innerHTML = a + b;
+        const result = a - b;
+        showResult("resultText2", result);
+    }
+
+    sumNumber(10, 20, showResult);
+    subNumber(50, 30, showResult);
+</script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Function</title>
+</head>
+<body>
+    <h1 id="resultText"></h1>
+    <h1 id="resultText2"></h1>
+</body>
+<script>
+    function showResult(idText, result){
+        document.getElementById(idText).innerHTML = result;
+    }
+
+    function showH1(text){
+        const h1Text = document.createElement("H1");
+        h1Text.innerHTML = text;
+        document.querySelector("body").append(h1Text);
+    }
+
+    function showP(text){
+        const pText = document.createElement("p");
+        pText.innerHTML = text;
+        document.querySelector("body").append(pText);
+    }
+
+    function sumNumber(a, b, showFunction){
+        const result = a + b;
+        showFunction(result);
+    }
+
+    function subNumber(a, b, showFunction) {
+        const result = a - b;
+        showFunction(result);
+    }
+
+    sumNumber(10, 20, showP);
+    sumNumber(10, 20, showH1);
+    subNumber(50, 30, showP);
+    subNumber(50, 30, showH1);
+
+    // keuntungan 
+    sumNumber(100, 200, function(text){
+        const h1Text = document.createElement("h1");
+        h1Text.innerHTML = text;
+        h1Text.style.color = "red";
+        document.querySelector("body").append(h1Text);
+    })
+
+    sumNumber(100, 300, text => {
+        console.log(text);
+    });
+</script>
+</html>

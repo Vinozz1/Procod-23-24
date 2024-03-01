@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cars</title>
+</head>
+<body>
+    <h1></h1>
+
+    <script>
+
+        let car1 = {
+            brand : "Toyota",
+            model : "23 Galaxy Ultra",
+            year : 2055,
+            owner : "Mine's",
+
+            suara : function () {
+                console.log("wusss .. wuss!");
+            },
+
+            drive : function () {
+                console.log(`${this.brand} ${this.model} belongs to ${car1.owner}`);
+            }
+        };
+
+        let car2 = {
+            brand : "Audi",
+            model : "15 Max",
+            year : 2023,
+            owner : "RRQ_Albert",
+
+            suara : () => {
+                console.log("Auuu .. Auuu!")
+            },
+
+            drive : function () {
+                console.log(`${this.brand} ${this.model} belongs to ${car2.owner}`);
+            }
+        };
+
+        let car3 = {
+            brand: "BMW",
+            model : "Blekberi",
+            year : 2011,
+            owner : "RRQ_SamuelHidayat Winner of M1",
+
+            suara : () => {
+                console.log("Boluiii ..  boluiii!")
+            },
+
+            drive : function () {
+                console.log(`${this.brand} ${this.model} belongs to ${car3.owner}`);
+            }
+        };
+
+        console.log(`My first car as a starboy is ${car1.brand} ${car1.model}`);
+        car1.suara();
+        car1.drive();
+        console.log(`This car release in ${car1.year}`);
+        console.log(`My second car's for my relative is ${car2.brand} ${car2.model}`);
+        car2.suara();
+        car2.drive();
+        console.log(`This car release in ${car2.year}`);
+        console.log(`My Favorite car for long distance ${car3.brand} ${car3.model}`);
+        car3.suara();
+        car3.drive();
+        console.log(`This car release in ${car3.year}`);
+
+    </script>
+    
+</body>
+</html>

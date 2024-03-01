@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function add(a, b){
+    //     return a+b;
+    // }
+
+    let add = (a, b) => {
+        return a+b;
+    }
+
+    // function subtract(a, b){
+    //     return a-b;
+    // }
+
+    const subtract = (a, b) => {
+        return a-b;
+    }
+
+    // function ketawa(){
+    //     console.log("😘😘😘😘")
+    // }
+
+    const ketawa = () => {
+        console.log("😘😘😘😘")
+    }
+
+    console.log(2 + 2);
+    console.log(add(2, 2));
+
+    // (2 + 3) - 10
+    let result = subtract(add(2, 3), 10);
+    console.log(result); 
+    ketawa();
+    add();
+
+    // function hitungLuasLingkaran(jariJari) {
+    // const pi = Math.PI; 
+    // const luas = pi * Math.pow(jariJari, 2); 
+
+    // return luas;
+    // }
+
+
+    // const jariJariLingkaran = 5; 
+    // const luasLingkaran = hitungLuasLingkaran(jariJariLingkaran);
+    // console.log(`Luas lingkaran dengan jari-jari ${jariJariLingkaran} adalah: ${luasLingkaran}`);
+
+    // Cara ke 2 dimana bisa memasukan angkanya
+    function hitungLuasLingkaran(jariJari) {
+    const pi = Math.PI; // Nilai pi
+    const luas = pi * Math.pow(jariJari, 2); 
+
+    return luas;
+    }
+
+    function inputJariJari() {
+        const jariJari = prompt("Masukkan jari-jari lingkaran:"); 
+        if (jariJari !== null) {
+            const luasLingkaran = hitungLuasLingkaran(parseFloat(jariJari));
+            alert(`Luas lingkaran dengan jari-jari ${jariJari} adalah: ${luasLingkaran}`);
+        }
+    }
+
+    inputJariJari(); 
+
+    // dari sir anas
+    // const findCircleArea = r => {
+    //     return 3.14159 * r * r;
+    // }
+
+    // const findCirclePerimeter = function (r) {
+    //     return 2 * 3.14159 * r;
+    // }
+
+
+</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pet</title>
+</head>
+<body>
+
+    <script>
+
+        let dog = {
+            name : "ALBEEEEEE",
+            age : 2,
+            sex : false,
+            owner : "ALPINO_EPEP_TZY",
+
+            say : function () {
+                console.log("Woof .. woof");
+            },
+
+            eat : function () {
+                console.log(`${this.name} is eating now!`);
+            }
+        };
+
+        let cat = {
+            name :  "rip_0pet",
+            age : 24,
+            sex : false,
+            owner : "RRQ_ANAS",
+
+            say : () => {
+                console.log("Meow .. meow!")
+            },
+
+            eat : function () {
+                console.log(`${this.name} is eating now!`);
+            }
+        };
+
+        let turtle = {
+            name: "Evos_leemon",
+            age : 10,
+            sex : false,
+            owner : "RRQ_SamuelHidayat-1",
+
+            say : () => {
+                console.log("Aku mau main haiperrr")
+            },
+
+            eat : function () {
+                console.log(`${this.name} lagi ngelorddd bertigaa!`);
+            }
+        };
+
+        console.log(`My dog is ${dog.name}`);
+        console.log(`My cat's owner is ${cat['owner']}`);
+        console.log(`My turtle's owner is ${turtle['owner']}`);
+        dog.say();
+        cat.say();
+        turtle.say();
+        dog.eat();
+        cat.eat();
+        turtle.eat();
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <h1 id="randomAnimalDisplay"></h1>
+
+    <script>
+        let adjs = ["pink", "biru", "hijau", "kuning", "pelangi"];
+        let animals = ["singa", "anjing", "burung", "ikan", "ayam"];
+
+        let randomAdj = adjs[Math.floor(Math.random() * adjs.length)];
+        let randomAnimal = animals[Math.floor(Math.random() * animals.length)];
+
+        let packageName = randomAdj + " " + randomAnimal;
+        console.log(packageName);
+
+        let randomNumberDisplay = document.getElementById("randomAnimalDisplay");
+
+        randomNumberDisplay.textContent = packageName;
+
+    </script>
+</body>

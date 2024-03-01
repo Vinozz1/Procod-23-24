@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item1 { grid-area: header;}
+        .item2 { grid-area: menu;}
+        .item3 { grid-area: main;}
+        .item4 { grid-area: right;}
+        .item5 { grid-area: footer;}
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                'header header header header header header'
+                ' menu menu menu main main main '
+                ' menu menu menu main main main '
+                ' footer footer footer footer footer footer';
+            gap: 10px;
+            background-color: salmon;
+            padding: 10px;
+        }
+
+        .container > div {
+            background-color: yellowgreen;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        div.item1 > h1 {
+            margin-bottom: 250px;
+        }
+
+        div.container {
+            justify-content: space-between;
+            height: calc(100vh - 154px);
+            width: 90%;
+            /* background-color: gray; */
+            margin: 0 auto;
+            border: 2px solid black;
+            margin-top: 200px;
+        }    
+        
+        div.item5 > a {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"> 
+            <h1> SeaBank</h1>
+            <p> CHECKOUT PAKAI</p>
+            <P> SEABANK BAYARW INSTAN</P>
+        </div>
+        <div class="item2">
+            GRATIS ONGKIR
+        </div>
+        <div class="item3">RP0</div>
+        <div class="item5"> <a href="#"> CEK SEKARANG </a></div>
+    </div>
+</body>
+</html>

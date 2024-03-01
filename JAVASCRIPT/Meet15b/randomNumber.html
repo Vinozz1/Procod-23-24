@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number</title>
+</head>
+<body>
+    <p>Angka acak:</p>
+    <p id="randomNumberDisplay"></p>
+
+    <script>
+        let randomNumber = Math.floor(Math.random() * 10);
+        console.log(randomNumber);
+
+        // Mengambil elemen dengan id "randomNumberDisplay"
+        let randomNumberDisplay = document.getElementById("randomNumberDisplay");
+
+        // Mengganti konten elemen dengan angka acak
+        randomNumberDisplay.textContent = randomNumber;
+
+    </script>
+</body>
+</html>

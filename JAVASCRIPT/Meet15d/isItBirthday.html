@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is it new year</title>
+    <style>
+        h1 {
+            display: flex;
+            justify-content: center;
+            height: 55vh;
+            align-items: center;            
+            font-size: 200px;
+        }
+
+        img {
+            height: 200px;
+        }
+        body {
+            background-image: linear-gradient(to bottom left, red, white, purple, yellow );
+        }
+
+        img.center {
+            float: right;
+        }
+    </style>
+</head>
+<header>
+    <div class="left">
+        <img src="Michie 2.jpg" alt="" class="left">
+    </div>
+    <div class="right">
+        <img src="SepatuNike.png" alt="" class="center">
+    </div>
+</header>
+<body>
+    <h1></h1>
+</body>
+<script>
+    let date = new Date();
+    let h1 = document.querySelector("h1")
+    let msg;
+    (date.getDate() === 9 && date.getMonth() === 0) ? msg = "YES" : msg = "NO";
+    h1.innerHTML = msg;
+</script>
+</html>
